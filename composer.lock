@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "14aa13b5cb4721d8e24a0af785e0c93c",
+    "content-hash": "965dcf94287a54ad4f4ca59f1e882a7a",
     "packages": [
         {
             "name": "dnoegel/php-xdg-base-dir",
@@ -371,8 +371,14 @@
             "version": "dev-master",
             "source": {
                 "type": "git",
-                "url": "../laravel-theme",
-                "reference": "6cb6925ab4a4fed56ce93eafb8c00770af307c9c"
+                "url": "https://github.com/igaster/laravel-theme.git",
+                "reference": "697548f755d81175bef8c0f37c1f189a62e205bd"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/igaster/laravel-theme/zipball/697548f755d81175bef8c0f37c1f189a62e205bd",
+                "reference": "697548f755d81175bef8c0f37c1f189a62e205bd",
+                "shasum": ""
             },
             "require": {
                 "illuminate/contracts": "5.4.*|5.5.*|5.6.*"
@@ -401,6 +407,7 @@
                     "Igaster\\LaravelTheme\\Tests\\": "tests/"
                 }
             },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -420,7 +427,7 @@
                 "themes",
                 "views"
             ],
-            "time": "2018-05-24T07:50:43+00:00"
+            "time": "2018-05-24T08:05:30+00:00"
         },
         {
             "name": "jakub-onderka/php-console-color",
