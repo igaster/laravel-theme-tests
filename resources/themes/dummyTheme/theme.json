@@ -1,0 +1,5 @@
+{
+  "name"        : "dummyTheme",
+  "extends"     : "theme4",
+  "asset-path"  : "dummyTheme"
+}

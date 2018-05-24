@@ -1,0 +1,7 @@
+{
+  "name"        : "theme-parent",
+  "extends"     : null,
+  "asset-path"  : "json-theme-parent",
+  "option1"     : "test",
+  "parent-option" : "parent-value"
+}

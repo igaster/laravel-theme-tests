@@ -1,0 +1,11 @@
+{
+  "name"        : "theme-child",
+  "extends"     : "theme-parent",
+  "asset-path"  : "customPath",
+  "option1"     : "value1",
+  "option2"     : [1,2,3,4],
+  "option3"     : {
+    "subOption" : "xxx"
+  },
+  "option4"     : true
+}
