@@ -15,7 +15,7 @@ class BladeDirectivesTest extends TestCase
      */
 	private $blade;
 
-	public function setUp()
+	public function setUp(): void
     {
         parent::setUp();
         $this->blade = app('view')->getEngineResolver()->resolve('blade')->getCompiler();

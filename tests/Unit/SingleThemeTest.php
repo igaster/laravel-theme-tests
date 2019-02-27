@@ -15,7 +15,7 @@ class SingleThemeTest extends TestCase
 
     public $theme1;
 
-    public function setUp()
+    public function setUp(): void
     {
         parent::setUp();
         $this->theme1 = new \Igaster\LaravelTheme\Theme('theme1');

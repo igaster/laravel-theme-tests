@@ -13,7 +13,7 @@ abstract class TestCase extends BaseTestCase
     // -----------------------------------------------
 
     public $viewNames = [];
-    public function setUp()
+    public function setUp(): void
     {
         parent::setUp();
 

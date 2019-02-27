@@ -17,7 +17,7 @@ class ViewNamespacingTest extends TestCase
     // A. Custom namespaces:
     //     Can be defined with view()->addNamespace('namespace', [base_path('NAMESPACE_PATH')]);
     //     A namespaced view is rendered with view('namespace::viewName')
-    //     Can be overidden inside theme folder: "THEME_FOLDER/NAMESPACE_PATH/..."
+    //     Can be overridden inside theme folder: "THEME_FOLDER/NAMESPACE_PATH/..."
     // B. Package View Namespaces:
     //     Laravel defines two locations: 1) inside package folder and 2) inside 'views/vendor/NAMESPACE_PATH' folder
     //     Theme will register "THEME_FOLDER/vendor/NAMESPACE_PATH/..."
@@ -30,7 +30,7 @@ class ViewNamespacingTest extends TestCase
     public $theme2;
     public $viewFinder;
 
-    public function setUp()
+    public function setUp(): void
     {
         parent::setUp();
         $this->theme1 = new \Igaster\LaravelTheme\Theme('theme1');

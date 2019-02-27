@@ -15,7 +15,7 @@ class ThemesInheritanceTest extends TestCase
     public $theme1;
     public $theme2;
 
-    public function setUp()
+    public function setUp(): void
     {
         parent::setUp();
         $this->theme1 = new \Igaster\LaravelTheme\Theme('theme1');

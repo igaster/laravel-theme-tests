@@ -25,7 +25,7 @@ class MarkdownEmailsTest extends TestCase
     public $theme2;
     public $viewFinder;
 
-    public function setUp()
+    public function setUp(): void
     {
         parent::setUp();
         $this->theme1 = new \Igaster\LaravelTheme\Theme('theme1');
@@ -46,10 +46,10 @@ class MarkdownEmailsTest extends TestCase
         $paths = $this->trimPaths($viewFinder->addThemeNamespacePaths('mail'));
         
         $this->assertEquals([
-            "resources/themes/theme2/vendor/mail/markdown",
-            "resources/themes/theme1/vendor/mail/markdown",
-            "resources/views/vendor/mail/markdown",
-            "vendor/laravel/framework/src/Illuminate/Mail/resources/views/markdown",
+            "resources/themes/theme2/vendor/mail/text",
+            "resources/themes/theme1/vendor/mail/text",
+            "resources/views/vendor/mail/text",
+            "vendor/laravel/framework/src/Illuminate/Mail/resources/views/text",
         ], $paths);
     }
 
@@ -62,7 +62,7 @@ class MarkdownEmailsTest extends TestCase
         $this->captureViews();
         \Mail::to("dummy@email.com")->send(new markdownEmail());
 
-        $this->assertViewRendered("views/vendor/mail/markdown/button");
+        $this->assertViewRendered("views/vendor/mail/text/button");
         $this->assertViewRendered("views/vendor/mail/html/button");
 
         // Theme2 overrided mail templates
@@ -70,7 +70,7 @@ class MarkdownEmailsTest extends TestCase
         $this->captureViews();
         \Mail::to("dummy@email.com")->send(new markdownEmail());
 
-        $this->assertViewRendered("themes/theme2/vendor/mail/markdown/button");
+        $this->assertViewRendered("themes/theme2/vendor/mail/text/button");
         $this->assertViewRendered("themes/theme2/vendor/mail/html/button");
     }
 }
