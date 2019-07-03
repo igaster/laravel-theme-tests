@@ -372,7 +372,7 @@
             "source": {
                 "type": "git",
                 "url": "../laravel-theme",
-                "reference": "0b8be5dba752bbd9e8f1de31efb4a300aa19790e"
+                "reference": "f75d323e1310c8506eff0f67814861cf9ced6567"
             },
             "require": {
                 "illuminate/contracts": "5.4.*|5.5.*|5.6.*|5.7.*|5.8.*"
@@ -416,7 +416,7 @@
                 "themes",
                 "views"
             ],
-            "time": "2019-02-27T22:56:34+00:00"
+            "time": "2019-07-03T05:25:33+00:00"
         },
         {
             "name": "jakub-onderka/php-console-color",

@@ -98,4 +98,11 @@ class AssetsTest extends TestCase
 
         $this->assertEquals('/theme1/file-value1.txt', theme_url('file-{key1}.txt'));
     }
+
+    public function testExternalUrls()
+    {
+        $this->assertEquals('http://domain.com/path', theme_url('http://domain.com/path'));
+        $this->assertEquals('https://domain.com/path', theme_url('https://domain.com/path'));
+        $this->assertEquals('//domain.com/path', theme_url('//domain.com/path'));
+    }
 }
