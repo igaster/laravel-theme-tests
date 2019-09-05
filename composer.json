@@ -7,7 +7,7 @@
   ],
   "license": "MIT",
   "type": "project",
-  "_repositories": [
+  "repositories": [
     {
       "type": "vcs",
       "url": "../laravel-theme"
