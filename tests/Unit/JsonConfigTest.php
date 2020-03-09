@@ -48,6 +48,18 @@ class JsonConfigTest extends TestCase
         $this->assertEquals($theme->getSetting('parent-option'), 'parent-value');
     }
 
+    public function testSettingsDotNotationSettings()
+    {
+        $theme = \Theme::find('theme5');
+        $this->assertEquals('value', $theme->getSetting('nested.key'));
+    }
+
+    public function testSettingsDotNotationSettingsAreLookedUpInTheParentThem()
+    {
+        $theme = \Theme::find('theme6');
+        $this->assertEquals('value', $theme->getSetting('nested.key'));
+    }
+
     public function testStandardConfigurationNotLoadedAsSetting()
     {
         $theme = \Theme::find('theme-child');

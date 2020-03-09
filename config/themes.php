@@ -62,21 +62,24 @@ return [
         // Add your themes here...
 
         'theme3' => [
-          "key2"  => "value changed",
-          "extends"  => "theme-parent",
+            "key2" => "value changed",
+            "extends" => "theme-parent",
         ],
 
         'theme5' => [
-          "views-path"  => "config-views",
-          "asset-path"  => "config-assets",
+            "views-path" => "config-views",
+            "asset-path" => "config-assets",
+            "nested" => [
+                "key" => "value",
+            ],
         ],
 
         'theme6' => [
-            'extends'	=> 'theme5',
+            'extends' => 'theme5',
         ],
 
         'theme8' => [
-            'extends'	=> 'theme9',
+            'extends' => 'theme9',
         ],
 
         'no-configuration',
